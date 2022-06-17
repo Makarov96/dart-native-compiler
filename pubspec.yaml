@@ -1,0 +1,23 @@
+name: cli
+description: A simple command-line application.
+version: 2.15.0
+# homepage: https://www.example.com
+environment:
+  sdk: ">=2.15.0 <3.0.0"
+
+dependencies:
+  dcli: 1.16.0
+  path: ^1.8.0
+  yaml: ^3.0.0
+
+dev_dependencies:
+  lints: ^1.0.0
+  build_runner: any
+  intl: ^0.17.0
+  intl_utils: ^2.3.0
+
+flutter_intl:
+  enabled: false # Required. Must be set to true to activate the plugin. Default: false
+  class_name: AppLocalizations # Optional. Sets the name for the generated localization class. Default: S
+  main_locale: en # Optional. Sets the main locale used for generating localization files. Provided value should comply with ISO-639-1 and ISO-3166-1 (e.g. "en", "en_GB
+
